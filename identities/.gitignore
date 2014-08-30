@@ -1,0 +1,6 @@
+# Ignore this directory
+*
+
+# Don't ignore this file
+!.gitignore
+!example.identity.dist
