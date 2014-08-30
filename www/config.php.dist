@@ -45,7 +45,7 @@ define('SIMPLEID_BASE_URL', 'http://www.example.com');
  * @since 0.8
  *
  */
-define('SIMPLEID_CLEAN_URL', false);
+define('SIMPLEID_CLEAN_URL', true);
 
 /**
  * Directory to store identity information.
@@ -57,7 +57,8 @@ define('SIMPLEID_CLEAN_URL', false);
  * that it is not visible to user agents.
  *
  */
-define('SIMPLEID_IDENTITIES_DIR', '@@IDENTITIES_DIR@@');
+//define('SIMPLEID_IDENTITIES_DIR', '@@IDENTITIES_DIR@@');
+define('SIMPLEID_IDENTITIES_DIR', '../identities');
 
 /**
  * Directory to store cache data.
@@ -70,7 +71,8 @@ define('SIMPLEID_IDENTITIES_DIR', '@@IDENTITIES_DIR@@');
  * that it is not visible to user agents.
  *
  */
-define('SIMPLEID_CACHE_DIR', '@@CACHE_DIR@@');
+//define('SIMPLEID_CACHE_DIR', '@@CACHE_DIR@@');
+define('SIMPLEID_CACHE_DIR', '../cache');
 
 /**
  * Persistent data storage mechanism.
@@ -97,7 +99,8 @@ define('SIMPLEID_STORE', 'filesystem');
  * that it is not visible to user agents.
  *
  */
-define('SIMPLEID_STORE_DIR', '@@STORE_DIR@@');
+//define('SIMPLEID_STORE_DIR', '@@STORE_DIR@@');
+define('SIMPLEID_STORE_DIR', '../store');
 
 /**
  * Allows use of unencrypted connections.

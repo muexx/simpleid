@@ -311,11 +311,11 @@ function openid_get_realm($request, $version) {
         $realm = $request['openid.trust_root'];
     }
 
-    if ($version >= OPENID_VERSION_2) {
+    if ($version >= OPENID_VERSION_2 && isset($request['openid.realm'])) {
         $realm = $request['openid.realm'];
     }
     
-    if (!$realm) {
+    if (!isset($realm)) {
         $realm = $request['openid.return_to'];
     }
     
